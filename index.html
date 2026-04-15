@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PWA Test</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#000001" />
+</head>
+<body>
+<div class="container">
+
+  <!-- LEFT: QUOTE -->
+  <div class="left-panel">
+    <div id="quote" class="quote">Tap to begin</div>
+    <div id="author" class="author"></div>
+    <button onclick="nextQuote()">Next</button>
+  </div>
+
+  <!-- RIGHT: IMAGE -->
+  <div class="right-panel">
+    <img id="art-image" src="" alt="Artwork" />
+  </div>
+
+</div>
+  <script src="quoteapp.js"></script>
+</body>
+</html>
