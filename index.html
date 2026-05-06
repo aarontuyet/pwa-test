@@ -3,28 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PWA Test</title>
+
+  <title>PWA Studio</title>
 
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="style.css" />
   <meta name="theme-color" content="#000001" />
 </head>
+
 <body>
-<div class="container">
+  <main class="page-shell">
+    <section class="hero">
+      <p class="eyebrow">Aaron’s PWA Studio</p>
+      <h1>Small tools for attention, memory, and practice.</h1>
+      <p class="hero-text">
+        A simple home base for lightweight creative apps, reference tools, quotes, notes, and experiments.
+      </p>
+    </section>
 
-  <!-- LEFT: QUOTE -->
-  <div class="left-panel">
-    <div id="quote" class="quote">Tap to begin</div>
-    <div id="author" class="author"></div>
-    <button onclick="nextQuote()">Next</button>
-  </div>
+    <section class="app-grid" aria-label="Available apps">
+      <a class="app-card" href="quotes.html">
+        <h2>Quotes</h2>
+        <p>Random quote practice, reflection, and future favorite/revisit tools.</p>
+        <span>Open Quotes</span>
+      </a>
 
-  <!-- RIGHT: IMAGE -->
-  <div class="right-panel">
-    <img id="art-image" src="" alt="Artwork" />
-  </div>
+      <a class="app-card" href="art.html">
+        <h2>Art References</h2>
+        <p>Randomized drawing references for gesture, anatomy, portrait, landscape, animals, architecture, and material studies.</p>
+        <span>Open Art References</span>
+      </a>
+    </section>
+  </main>
 
-</div>
-  <script src="quoteapp.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
 </body>
 </html>

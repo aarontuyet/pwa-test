@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Quotes | PWA Studio</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#000001" />
+</head>
+
+<body>
+  <main class="page-shell">
+    <nav class="top-nav app-actions">
+      <a href="index.html">Home</a>
+      <button type="button" class="nav-button" onclick="history.back()">Back</button>
+    </nav>
+
+    <section class="hero compact">
+      <p class="eyebrow">Reflection</p>
+      <h1>Quotes</h1>
+      <p class="hero-text">
+        Pull a quote and image pairing for reflection, memory, and creative association.
+      </p>
+    </section>
+
+    <section class="quote-layout">
+      <section class="quote-panel">
+        <div id="quote" class="quote">Tap to begin</div>
+        <div id="author" class="author"></div>
+        <button type="button" onclick="nextQuote()">Next</button>
+      </section>
+
+      <section class="quote-image-stage">
+        <img id="art-image" class="quote-image" src="" alt="Artwork" />
+      </section>
+    </section>
+  </main>
+
+  <script src="quoteapp.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+</body>
+</html>

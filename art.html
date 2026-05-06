@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Art References | PWA Studio</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#000001" />
+</head>
+
+<body>
+  <main class="page-shell">
+    <nav class="top-nav app-actions">
+      <a href="index.html">Home</a>
+      <button type="button" class="nav-button" onclick="history.back()">Back</button>
+    </nav>
+
+    <section class="hero compact">
+      <p class="eyebrow">Drawing Practice</p>
+      <h1>Art References</h1>
+      <p class="hero-text">
+        Select a category and pull a clean reference image for practice.
+      </p>
+    </section>
+
+    <section class="controls-panel">
+      <label for="category-select">Reference category</label>
+
+      <select id="category-select">
+        <option value="gesture">Gesture & Movement</option>
+        <option value="anatomy">Anatomy & Structure</option>
+        <option value="portrait">Portrait & Expression</option>
+        <option value="landscape">Landscape & Environment</option>
+        <option value="animals">Animals & Creatures</option>
+        <option value="architecture">Architecture & Perspective</option>
+        <option value="still-life">Still Life & Material Studies</option>
+      </select>
+
+      <div class="button-row">
+        <button id="random-image-button" type="button">Random Reference</button>
+        <button id="previous-image-button" type="button">Previous</button>
+        <button id="next-image-button" type="button">Next</button>
+      </div>
+    </section>
+<section class="reference-display">
+  <section class="reference-stage">
+    <div id="reference-empty" class="empty-state">
+      <div class="empty-card">
+        <h2>Ready to practice</h2>
+        <p>Select a category, then click Random Reference to begin.</p>
+      </div>
+    </div>
+
+    <img id="reference-image" class="reference-image" alt="Art reference" hidden />
+  </section>
+</section>
+
+  </main>
+
+  <script src="art-reference.js"></script>
+
+  <!--
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+  -->
+</body>
+</html>

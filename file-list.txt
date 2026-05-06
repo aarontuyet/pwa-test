@@ -1,0 +1,207 @@
+Folder PATH listing
+Volume serial number is A6AA-0224
+C:.
+|   art-references.json
+|   art.html
+|   data.json
+|   file-list.txt
+|   images.json
+|   images.txt
+|   index.html
+|   manifest.json
+|   quoteapp.js
+|   quotes.html
+|   style.css
+|   sw.js
+|   TAOPROJECT_Master_Table - PWA.csv
+|   
+\---images
+    |   art_001.jpg
+    |   art_002.jpg
+    |   art_003.jpg
+    |   art_004.jpg
+    |   art_005.jpg
+    |   art_006.jpg
+    |   art_007.jpg
+    |   art_008.jpg
+    |   art_009.jpg
+    |   art_010.jpg
+    |   art_011.jpg
+    |   art_012.jpg
+    |   art_013.jpg
+    |   art_014.jpg
+    |   art_015.jpg
+    |   art_016.jpg
+    |   art_017.jpg
+    |   art_018.jpg
+    |   art_019.jpg
+    |   art_020.jpg
+    |   art_021.jpg
+    |   art_022.jpg
+    |   art_023.jpg
+    |   art_024.jpg
+    |   art_025.jpg
+    |   art_026.jpg
+    |   art_027.jpg
+    |   art_028.jpg
+    |   art_029.jpg
+    |   art_030.jpg
+    |   art_031.jpg
+    |   art_032.jpg
+    |   art_033.jpg
+    |   art_034.jpg
+    |   art_035.jpg
+    |   art_036.jpg
+    |   art_037.jpg
+    |   art_038.jpg
+    |   art_039.jpg
+    |   art_040.jpg
+    |   art_041.jpg
+    |   art_042.jpg
+    |   art_043.jpg
+    |   art_044.jpg
+    |   art_045.jpg
+    |   art_046.jpg
+    |   art_047.jpg
+    |   art_048.jpg
+    |   art_049.jpg
+    |   art_050.jpg
+    |   art_051.jpg
+    |   
+    \---art-reference
+        +---anatomy
+        |       a1.jpg
+        |       a10.jpg
+        |       a11.jpg
+        |       a13.jpg
+        |       a14.jpg
+        |       a15.jpg
+        |       a16.jpg
+        |       a17.jpg
+        |       a18.jpg
+        |       a19.jpg
+        |       a2.jpg
+        |       a20.jpg
+        |       a21.jpg
+        |       a22.jpg
+        |       a23.jpg
+        |       a24.jpg
+        |       a25.jpg
+        |       a26.jpg
+        |       a27.jpg
+        |       a28.jpg
+        |       a29.jpg
+        |       a3.jpg
+        |       a30.jpg
+        |       a31.jpg
+        |       a32.jpg
+        |       a33.jpg
+        |       a4.jpg
+        |       a5.jpg
+        |       a6.jpg
+        |       a7.jpg
+        |       a8.jpg
+        |       a9.jpg
+        |       
+        +---animals
+        |       n1.jpg
+        |       n10.jpg
+        |       n11.jpg
+        |       n11.webp
+        |       n12.jpg
+        |       n13.jpg
+        |       n14.jpg
+        |       n15.jpg
+        |       n16.jpg
+        |       n17.png
+        |       n18.jpg
+        |       n19.jpg
+        |       n2.jpg
+        |       n20.jpg
+        |       n21.jpg
+        |       n22.jpg
+        |       n23.jpg
+        |       n24.jpg
+        |       n25.jpg
+        |       n26.jpg
+        |       n27.jpg
+        |       n28.jpg
+        |       n3.jpg
+        |       n4.jpg
+        |       n5.jpg
+        |       n6.jpg
+        |       n7.jpg
+        |       n8.jpg
+        |       n9.jpg
+        |       
+        +---architecture
+        +---gesture
+        |       g1.jpg
+        |       g10.jpg
+        |       g11.jpg
+        |       g12.jpg
+        |       g13.jpg
+        |       g14.jpg
+        |       g15.png
+        |       g16.jpg
+        |       g17.jpg
+        |       g18.jpg
+        |       g19.jpg
+        |       g2.jpg
+        |       g20.jpg
+        |       g21.jpg
+        |       g22.jpg
+        |       g23.jpg
+        |       g3.jpg
+        |       g4.jpg
+        |       g5.jpg
+        |       g5.png
+        |       g6.png
+        |       g7.jpg
+        |       g8.jpg
+        |       g9.jpg
+        |       
+        +---landscape
+        |       l1.jpg
+        |       l2.jpg
+        |       
+        +---portrait
+        |       p1.jpg
+        |       p10.jpg
+        |       p11.jpg
+        |       p13.jpg
+        |       p14.jpg
+        |       p15.jpg
+        |       p16.jpg
+        |       p17.jpg
+        |       p2.jpg
+        |       p3.jpg
+        |       p4.jpg
+        |       p5.jpg
+        |       p6.jpg
+        |       p7.jpg
+        |       p8.jpg
+        |       p9.jpg
+        |       
+        \---still-life
+                s1.jpg
+                s12.jpg
+                s13.jpg
+                s14.jpg
+                s15.jpg
+                s16.jpg
+                s17.jpg
+                s18.jpg
+                s19.jpg
+                s2.jpg
+                s20.jpg
+                s21.jpg
+                s3.jpg
+                s4.jpg
+                s5.jpg
+                s6.jpg
+                s7.jpg
+                s8.jpg
+                s9.jpg
+                s_10.jpg
+                

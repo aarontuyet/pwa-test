@@ -1,0 +1,494 @@
+[
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a1.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a10.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a11.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a13.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a14.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a15.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a16.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a17.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a18.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a19.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a2.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a20.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a21.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a22.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a23.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a24.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a25.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a26.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a27.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a28.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a29.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a3.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a30.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a31.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a32.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a33.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a4.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a5.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a6.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a7.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a8.jpg"
+  },
+  {
+    "category": "anatomy",
+    "src": "images/art-reference/anatomy/a9.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n1.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n10.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n11.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n11.webp"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n12.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n13.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n14.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n15.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n16.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n17.png"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n18.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n19.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n2.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n20.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n21.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n22.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n23.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n24.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n25.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n26.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n27.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n28.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n3.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n4.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n5.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n6.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n7.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n8.jpg"
+  },
+  {
+    "category": "animals",
+    "src": "images/art-reference/animals/n9.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g1.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g10.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g11.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g12.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g13.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g14.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g15.png"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g16.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g17.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g18.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g19.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g2.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g20.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g21.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g22.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g23.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g3.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g4.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g5.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g5.png"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g6.png"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g7.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g8.jpg"
+  },
+  {
+    "category": "gesture",
+    "src": "images/art-reference/gesture/g9.jpg"
+  },
+  {
+    "category": "landscape",
+    "src": "images/art-reference/landscape/l1.jpg"
+  },
+  {
+    "category": "landscape",
+    "src": "images/art-reference/landscape/l2.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p1.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p10.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p11.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p13.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p14.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p15.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p16.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p17.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p2.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p3.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p4.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p5.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p6.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p7.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p8.jpg"
+  },
+  {
+    "category": "portrait",
+    "src": "images/art-reference/portrait/p9.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s_10.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s1.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s12.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s13.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s14.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s15.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s16.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s17.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s18.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s19.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s2.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s20.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s21.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s3.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s4.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s5.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s6.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s7.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s8.jpg"
+  },
+  {
+    "category": "still-life",
+    "src": "images/art-reference/still-life/s9.jpg"
+  }
+]
