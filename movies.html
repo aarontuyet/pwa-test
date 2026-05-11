@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Movies to Watch | PWA Studio</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#000001" />
+</head>
+
+<body>
+  <main class="page-shell">
+    <nav class="top-nav app-actions">
+      <a href="/">Home</a>
+      <button type="button" class="nav-button" onclick="history.back()">Back</button>
+    </nav>
+
+    <section class="hero compact">
+      <p class="eyebrow">Watchlist</p>
+      <h1>Movies to Watch</h1>
+      <p class="hero-text">
+        Search, filter, and sort your movie list by rating, era, status, director, category, and recommendation strength.
+      </p>
+    </section>
+
+    <section class="controls-panel">
+      <div class="movie-controls-grid">
+        <div class="movie-control">
+          <label for="movie-search">Search</label>
+          <input
+            id="movie-search"
+            type="search"
+            placeholder="Comedy, Kurosawa, horror, old, weird..."
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="movie-control">
+          <label for="movie-era">Era</label>
+          <select id="movie-era">
+            <option value="all">All Eras</option>
+            <option value="old">Old, before 2010</option>
+            <option value="new">New, 2010+</option>
+          </select>
+        </div>
+
+        <div class="movie-control">
+          <label for="movie-status">Status</label>
+          <select id="movie-status">
+            <option value="all">All Statuses</option>
+            <option value="want">Want to Watch</option>
+            <option value="watched">Watched</option>
+            <option value="maybe">Maybe</option>
+          </select>
+        </div>
+
+        <div class="movie-control">
+          <label for="movie-rating">Rating</label>
+          <select id="movie-rating">
+            <option value="0">Any Rating</option>
+            <option value="6">6+</option>
+            <option value="7">7+</option>
+            <option value="8">8+</option>
+            <option value="9">9+</option>
+          </select>
+        </div>
+
+        <div class="movie-control">
+          <label for="movie-sort">Sort</label>
+          <select id="movie-sort">
+            <option value="rating-desc">Highest Rated</option>
+            <option value="want-rank">Want Rank</option>
+            <option value="year-desc">Newest</option>
+            <option value="year-asc">Oldest</option>
+            <option value="title-asc">Title</option>
+            <option value="director-asc">Director</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="movie-toolbar">
+        <button id="recommended-button" type="button">Recommended</button>
+        <button id="reset-movie-filters" class="secondary-button" type="button">Reset Filters</button>
+      </div>
+    </section>
+
+    <section class="movie-summary">
+      <div id="movie-results-count">Loading movies...</div>
+    </section>
+
+    <section id="movie-results" class="movie-results">
+      <div class="empty-card">
+        <h2>Loading movies</h2>
+        <p>Reading the master table and preparing the watchlist.</p>
+      </div>
+    </section>
+
+    <section id="movie-review-panel" class="movie-review-panel" hidden>
+      <h2 id="movie-review-title"></h2>
+      <div id="movie-review-body"></div>
+    </section>
+  </main>
+
+  <script src="movies.js"></script>
+</body>
+</html>
