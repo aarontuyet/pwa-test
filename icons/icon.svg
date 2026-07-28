@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">PWA Studio</title>
+  <defs>
+    <linearGradient id="background" x1="72" y1="52" x2="444" y2="468" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff1f7"/>
+      <stop offset="0.46" stop-color="#f6bfdc"/>
+      <stop offset="1" stop-color="#b35b8b"/>
+    </linearGradient>
+    <linearGradient id="card" x1="170" y1="138" x2="354" y2="376" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b43a7a"/>
+      <stop offset="1" stop-color="#641641"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#3b1029"/>
+  <rect x="56" y="56" width="400" height="400" rx="92" fill="url(#background)"/>
+  <rect x="126" y="145" width="150" height="214" rx="38" fill="#fff7fb" opacity="0.92" transform="rotate(-10 201 252)"/>
+  <rect x="236" y="153" width="150" height="214" rx="38" fill="#fff7fb" opacity="0.78" transform="rotate(10 311 260)"/>
+  <rect x="181" y="137" width="150" height="238" rx="42" fill="url(#card)"/>
+  <circle cx="256" cy="216" r="34" fill="#fff1f7"/>
+  <path d="M222 286c21-25 47-25 68 0 13 15 17 36 14 58h-96c-3-22 1-43 14-58Z" fill="#f6bfdc"/>
+</svg>

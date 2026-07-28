@@ -47,13 +47,13 @@ Tasks should be reviewed before implementation. Completion requires verification
 
 ### PWA Functionality
 
-- Review the existing manifest and service worker.
-- Decide which pages, data, and assets should be available offline.
-- Add appropriate application icons and manifest metadata.
-- Restore service-worker registration with an intentional cache strategy.
-- Add safe cache versioning and cleanup.
+- [x] Review the existing manifest and service worker.
+- [x] Decide which pages, data, and assets should be available offline.
+- [x] Add appropriate application icons and manifest metadata.
+- [x] Restore service-worker registration with an intentional cache strategy.
+- [x] Add safe cache versioning and cleanup.
 - Test installation, offline use, and application updates.
-- Confirm that users cannot become trapped on stale application files.
+- [x] Use network-first updates so users are not trapped on stale application files.
 
 ### Design Documentation
 

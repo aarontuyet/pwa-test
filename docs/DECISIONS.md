@@ -130,3 +130,16 @@ Inspection confirmed that all 2,000 normalized quotes match the quote CSV, the M
 
 **Consequences:**
 These files are now validated explicitly. Historical backup JSON files and unreferenced duplicate images should not be treated as application sources.
+
+### 2026-07-28: Use Network-First PWA Updates
+
+**Status:** Accepted
+
+**Decision:**
+Use a network-first service worker with a versioned application-shell cache and a persistent media cache. Precache the application shell, all data, and Quote images. Cache the larger Art Reference images as they are viewed.
+
+**Reason:**
+The site previously served stale deployments through an older cache. Network-first requests keep online visits current while still providing useful offline access. Avoiding an automatic 40 MB Art Reference download keeps installation lightweight.
+
+**Consequences:**
+Quotes and Movies work fully offline after the initial online visit. Art Reference images work offline after they have been viewed online. New service workers activate immediately, remove obsolete shell caches, and refresh an already-controlled page once.

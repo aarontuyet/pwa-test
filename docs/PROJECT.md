@@ -23,7 +23,7 @@ PWA Studio currently uses:
 - Local image assets
 - Static web hosting
 
-Despite its name, the project does not currently have active installation or offline functionality. Restoring genuine PWA behavior is part of the stabilization backlog.
+The project includes installable PWA behavior. Its application shell, data, and Quote images are available offline; Art Reference images are cached as they are viewed.
 
 ## Current Priority
 

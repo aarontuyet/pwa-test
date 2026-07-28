@@ -122,6 +122,7 @@ const required = [
   "quoteapp.js",
   "art-reference.js",
   "movies.js",
+  "pwa.js",
   "manifest.json",
   "sw.js",
   "data.json",
@@ -271,10 +272,101 @@ missingHtmlReferences.length
   ? fail(`Missing HTML references: ${missingHtmlReferences.join(", ")}`)
   : pass("All local files referenced directly by the HTML pages exist.");
 
+const requiredManifestValues = {
+  name: "PWA Studio",
+  display: "standalone",
+  start_url: "./index.html",
+  scope: "./"
+};
+const invalidManifestValues = Object.entries(requiredManifestValues).filter(
+  ([key, value]) => clean(manifest[key]) !== value
+);
+invalidManifestValues.length
+  ? fail(
+      `manifest.json has invalid install metadata: ${invalidManifestValues
+        .map(([key]) => key)
+        .join(", ")}.`
+    )
+  : pass("The manifest has the required PWA install metadata.");
+
+const manifestIcons = Array.isArray(manifest.icons) ? manifest.icons : [];
+const has192Icon = manifestIcons.some((icon) =>
+  clean(icon.sizes).split(/\s+/).includes("192x192")
+);
+const has512Icon = manifestIcons.some((icon) =>
+  clean(icon.sizes).split(/\s+/).includes("512x512")
+);
+const hasMaskableIcon = manifestIcons.some((icon) =>
+  clean(icon.purpose).split(/\s+/).includes("maskable")
+);
+
+manifestIcons.forEach((icon, index) =>
+  expectLocalFile(`Manifest icon ${index + 1}`, icon.src)
+);
+
+const incorrectlySizedIcons = manifestIcons.filter((icon) => {
+  const iconPath = file(clean(icon.src));
+  if (!existsSync(iconPath) || clean(icon.type) !== "image/png") return false;
+
+  const contents = readFileSync(iconPath);
+  if (contents.length < 24 || contents.toString("ascii", 1, 4) !== "PNG") {
+    return true;
+  }
+
+  const actualSize = `${contents.readUInt32BE(16)}x${contents.readUInt32BE(20)}`;
+  return !clean(icon.sizes).split(/\s+/).includes(actualSize);
+});
+incorrectlySizedIcons.length
+  ? fail(
+      `Manifest icon dimensions do not match their declarations: ${incorrectlySizedIcons
+        .map((icon) => icon.src)
+        .join(", ")}.`
+    )
+  : pass("Manifest icon dimensions match their declared sizes.");
+
+has192Icon && has512Icon && hasMaskableIcon
+  ? pass("The manifest includes 192px, 512px, and maskable install icons.")
+  : fail("The manifest needs 192px, 512px, and maskable install icons.");
+
+const pagesWithoutPwaRegistration = [
+  "index.html",
+  "quotes.html",
+  "art.html",
+  "movies.html"
+].filter((htmlFile) => !text(htmlFile).includes('src="pwa.js"'));
+pagesWithoutPwaRegistration.length
+  ? fail(
+      `PWA registration is missing from: ${pagesWithoutPwaRegistration.join(", ")}`
+    )
+  : pass("Every application page loads the PWA registration script.");
+
+const requiredOfflineAssets = [
+  "./index.html",
+  "./quotes.html",
+  "./art.html",
+  "./movies.html",
+  "./style.css",
+  "./pwa.js",
+  "./data.json",
+  "./images.json",
+  "./art-references.json",
+  "./TAOPROJECT_Master_Table - PWA.csv"
+];
+const serviceWorkerSource = text("sw.js");
+const uncachedOfflineAssets = requiredOfflineAssets.filter(
+  (path) => !serviceWorkerSource.includes(`"${path}"`)
+);
+uncachedOfflineAssets.length
+  ? fail(
+      `The service worker does not precache required offline assets: ${uncachedOfflineAssets.join(", ")}.`
+    )
+  : pass("The service worker precaches every application page and dataset.");
+
 const syntaxErrors = [
   "quoteapp.js",
   "art-reference.js",
   "movies.js",
+  "pwa.js",
   "sw.js",
   "scripts/validate-project.mjs"
 ].filter(
@@ -303,14 +395,10 @@ const backups = [
 if (backups.length) {
   warn(`Historical backup data remains in the root: ${backups.join(", ")}.`);
 }
-if (!Array.isArray(manifest.icons) || !manifest.icons.length) {
-  warn("manifest.json has no install icons.");
-}
-if (text("index.html").includes("<!--script>")) {
-  warn("Service-worker registration is intentionally commented out.");
-}
-if (text("sw.js").includes("registration.unregister()")) {
-  warn("sw.js is still the temporary cache-clearing uninstall worker.");
+if (serviceWorkerSource.includes("registration.unregister()")) {
+  fail("sw.js must not unregister itself.");
+} else {
+  pass("The service worker remains registered after activation.");
 }
 
 console.log("\nPWA Studio validation\n");

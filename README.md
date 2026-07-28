@@ -136,7 +136,13 @@ Warnings identify known cleanup work without failing validation.
 
 The application must be opened through a local web server because its data is loaded with `fetch()`. Opening the HTML files directly may prevent Quotes, Movies, and Art References from loading their data.
 
-The exact Visual Studio preview method used on the Windows working copy should be recorded here once confirmed.
+From the project root, one dependency-free option is:
+
+```text
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000/`.
 
 ## Testing
 
@@ -162,9 +168,8 @@ https://pwa-test-c8n.pages.dev/
 
 ## Current Limitations
 
-- Installation and offline functionality are intentionally inactive.
-- `manifest.json` does not yet include application icons.
-- `sw.js` is still a temporary cache-clearing uninstall worker.
+- The PWA caches the complete app shell, all application data, and all Quote images for offline use.
+- Art Reference images are cached as they are viewed rather than downloaded as a 40 MB collection on first visit.
 - Historical backup data and a duplicate set of quote images remain in the production root pending deliberate cleanup.
 - Automated browser tests have not yet been added.
 

@@ -124,4 +124,16 @@ nextButton.addEventListener("click", () => {
   }
 });
 
+referenceImage.addEventListener("error", () => {
+  referenceImage.hidden = true;
+  referenceImage.removeAttribute("src");
+
+  showEmptyState(
+    "Reference unavailable",
+    navigator.onLine
+      ? "This image could not be loaded. Try another reference."
+      : "This image has not been saved for offline use yet. Open it once while online, then it will remain available offline."
+  );
+});
+
 loadReferences();

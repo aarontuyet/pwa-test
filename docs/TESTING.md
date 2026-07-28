@@ -122,16 +122,20 @@ Warnings record known cleanup and PWA work without making otherwise healthy data
 
 ## PWA Testing
 
-Once PWA behavior is restored, test:
+After deploying a PWA change:
 
-- The application can be installed.
-- The manifest loads without errors.
-- Required icons are present.
-- The service worker registers successfully.
-- Essential pages and assets are cached intentionally.
-- The application provides a useful offline experience.
-- Updates do not leave users trapped on stale files.
-- Cache cleanup does not remove required data.
+1. Open the production site while online.
+2. Confirm the browser offers **Install PWA Studio** and the app icon appears correctly.
+3. Open the homepage, Quotes, Movies, and at least one Art Reference.
+4. In browser developer tools, confirm `sw.js` is active and controlling the page.
+5. Switch the browser Network panel to **Offline**.
+6. Reload the homepage and each application.
+7. Confirm Quotes still produces quote-and-image pairs.
+8. Confirm Movies loads, searches, and filters.
+9. Confirm the Art Reference viewed while online remains available.
+10. Return online, deploy or edit a harmless visible test change, and confirm the new version replaces the old one after reload.
+
+The service worker intentionally uses the network first and cached files as an offline fallback. It precaches the application shell, all data, and Quote images. Art Reference images are cached as they are viewed so the first visit does not require downloading the roughly 40 MB collection.
 
 ## Change-Specific Testing
 
