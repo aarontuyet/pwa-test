@@ -98,17 +98,27 @@ Confirm:
 
 ## Data Validation
 
-Before deployment, confirm:
+Run:
+
+```text
+node scripts/validate-project.mjs
+```
+
+The command currently confirms:
 
 - JSON parses successfully.
 - Required data files exist.
-- Expected records load.
+- JavaScript syntax is valid.
+- Expected record counts are unchanged.
 - IDs are unique.
+- Required quote and movie fields are present.
+- `data.json` matches `quotes-source.csv`.
+- Movie ratings use valid numeric values.
 - Referenced images exist.
 - Categories and structured values are valid.
 - No unintended duplicate records were introduced.
 
-These checks should eventually be automated.
+Warnings record known cleanup and PWA work without making otherwise healthy data fail validation.
 
 ## PWA Testing
 

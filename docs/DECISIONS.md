@@ -117,3 +117,16 @@ Codex is most useful when project intent is documented and its work can be verif
 
 **Consequences:**  
 Codex should follow `AGENTS.md`, read the relevant project documents, make focused changes, run available checks, and report unresolved risks.
+
+### 2026-07-28: Confirm the Current Data Sources
+
+**Status:** Accepted
+
+**Decision:**
+Use `quotes-source.csv` as the curated Quotes source, `data.json` as its normalized application output, `TAOPROJECT_Master_Table - PWA.csv` as the direct Movies source, `art-references.json` as the Art References index, and `images.json` as the Quote image index.
+
+**Reason:**
+Inspection confirmed that all 2,000 normalized quotes match the quote CSV, the Movies application directly filters 572 movie rows from the 2,572-row master CSV, and all 123 art-reference paths plus all 51 quote-image paths exist.
+
+**Consequences:**
+These files are now validated explicitly. Historical backup JSON files and unreferenced duplicate images should not be treated as application sources.

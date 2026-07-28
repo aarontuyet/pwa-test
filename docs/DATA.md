@@ -21,56 +21,69 @@ Data changes should be deliberate, repeatable, and validated. No dataset should 
 
 ### Quotes
 
-Known files include:
+Authoritative source:
 
-- `quotes/data.json`
-- `quotes/quotes-source.csv`
-- Additional import or backup files
+- `quotes-source.csv`
 
-The relationship between these files must be confirmed during stabilization.
+Application data:
 
-Questions to resolve:
+- `data.json`
 
-- Which file is the authoritative quote collection?
-- Is `data.json` generated from the CSV?
-- Which backup files remain necessary?
-- How are quote IDs assigned and preserved?
-- Which fields are required by the application?
+Confirmed relationship:
+
+- Both files contain 2,000 quotes in the same order.
+- `data.json` is the normalized application version of `quotes-source.csv`.
+- IDs in `data.json` are sequential from 1 through 2,000.
+- `Quote` maps to `content`.
+- `Column 7` maps to `creator`.
+- `Year` maps to `year`.
+- `Topic` maps to `category`.
+- `Sub-topic` maps to `subcategory`.
+- `From` maps to `source`.
+- The application requires `id`, `type`, `content`, and `creator`.
+
+Quote images are listed in `images.json` and stored in `images/quotes/`. The list currently contains 51 unique, valid paths.
+
+Historical files `data-bad-import-backup.json` and `data-broken-backup.json` are not used by the application. Preserve them until an archival cleanup is approved.
 
 ### Movies
 
-Known files include:
+Authoritative and application source:
 
-- A master CSV containing approximately 2,572 rows
-- Application data containing approximately 572 active movie records
+- `TAOPROJECT_Master_Table - PWA.csv`
 
-Questions to resolve:
+Confirmed relationship:
 
-- Which file is the authoritative movie source?
-- What determines whether a master record appears in the application?
-- How is the application data generated?
-- Which fields power search, filtering, sorting, and recommendations?
-- How are missing values handled?
-- Are poster or image references stored locally or externally?
+- The master CSV contains 2,572 rows.
+- `movies.js` loads this CSV directly in the browser.
+- A row appears in Movies when its `type` value is `Movie`, matched without regard to capitalization.
+- The current master contains 572 movie rows.
+- Every current movie has a unique `id` and a non-empty `title`.
+- Search uses title, content, creator/director, year, era, category, subcategory, tags, watch status, awards, ratings, importance, favorite, context, meaning, notes, and source.
+- Filters use era, normalized watch status, and `Rating_Final`.
+- Sorting uses `Rating_Final`, `WantRank`, year, title, or creator/director.
+- Recommendations use ratings, importance, favorite, `WantRank`, and awards.
+- Missing numeric values are treated as absent rather than zero during sorting.
+- The application does not currently use movie poster images.
 
 ### Art References
 
-Known files include:
+Authoritative application index:
 
-- `art-references/art-references.json`
-- `art-references/images.json`
-- Local image assets
+- `art-references.json`
 
-The current collection contains approximately 123 references.
+Image assets:
 
-Questions to resolve:
+- `images/art-reference/`
 
-- Which JSON file is authoritative?
-- What role does each JSON file play?
-- How are image filenames linked to reference records?
-- Which categories are allowed?
-- Should empty or underused categories remain visible?
-- How are new images prepared and named?
+Confirmed relationship:
+
+- `art-references.json` contains 123 entries.
+- Each entry contains `category` and `src`.
+- Every current `src` path exists and is unique.
+- Supported categories are `gesture`, `anatomy`, `portrait`, `landscape`, `animals`, `architecture`, and `still-life`.
+- `architecture` is currently visible in the interface but has no reference entries.
+- `images.json` does not belong to Art References; it is the quote-image list.
 
 ## Required Validation
 
@@ -116,15 +129,12 @@ Human curation remains the source of meaning. Automation should protect the coll
 
 ## Stabilization Task
 
-During stabilization, inspect the application code and existing files to replace the unresolved questions in this document with confirmed answers.
+Run the project validator after data or image changes:
 
-Once the sources of truth are known, document:
+```text
+node scripts/validate-project.mjs
+```
 
-- Authoritative source files
-- Generated files
-- Required fields
-- Allowed categories
-- ID rules
-- Image naming rules
-- Update commands
-- Expected record counts
+The current validator enforces the confirmed record counts, required fields, unique IDs, source consistency, category values, rating formats, and referenced image paths.
+
+The next data task is to create a documented generator for `data.json` from `quotes-source.csv`, so quote updates do not require manual synchronization.

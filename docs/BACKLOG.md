@@ -26,12 +26,12 @@ Tasks should be reviewed before implementation. Completion requires verification
 
 ### Data
 
-- Identify the authoritative source for Quotes.
-- Identify the authoritative source for Movies.
-- Identify the authoritative source for Art References.
-- Document generated files and how each is produced.
-- Confirm required fields, ID rules, categories, and expected record counts.
-- Add validation for JSON syntax, duplicate IDs, missing fields, invalid categories, and missing images.
+- [x] Identify the authoritative source for Quotes.
+- [x] Identify the authoritative source for Movies.
+- [x] Identify the authoritative source for Art References.
+- [x] Document current source-to-application relationships.
+- [x] Confirm required fields, ID rules, categories, and expected record counts.
+- [x] Add validation for JSON syntax, duplicate IDs, missing fields, invalid categories, and missing images.
 - Create one repeatable process for generating application data from its source.
 - Review unused, empty, or underrepresented Art Reference categories.
 
@@ -39,8 +39,8 @@ Tasks should be reviewed before implementation. Completion requires verification
 
 - Establish and document a reliable local testing method.
 - Record a manual baseline test for the homepage and all three applications.
-- Add lightweight automated checks for JavaScript and JSON syntax.
-- Add data and image-path validation.
+- [x] Add lightweight automated checks for JavaScript and JSON syntax.
+- [x] Add data and image-path validation.
 - Add basic browser tests for page loading, navigation, search, filters, and categories.
 - Verify desktop, narrow-phone, and phone-landscape layouts.
 - Check the browser console for current errors and warnings.
